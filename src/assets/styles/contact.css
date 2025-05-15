@@ -1,0 +1,61 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+  border-radius: 8px;
+  width: 45%;
+  height: 140vh;
+  box-sizing: border-box;
+}
+
+.main-section h2 {
+  color: yellow;
+  text-align: center;
+}
+p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+form textarea {
+  resize: none;
+  background-color: #fff;
+}
+
+form button {
+  background: rgb(246, 246, 6);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+    justify-content: center;
+    width: 100%;
+}
+#message {
+  height: 150px;
+}
+form button:hover {
+  background: red;
+}
+.contact-form{
+ background: rgb(250, 244, 244);
+}

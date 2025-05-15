@@ -1,0 +1,173 @@
+
+/* Main Section Layout */
+.main-section {
+    width: 80%;
+    position: relative;
+    margin: 50px ;
+    padding: 50px;
+    border-radius: 8px;
+    border: 1px solid yellow;
+    background-color: black;
+}
+
+/* General Layout for Category */
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;  /* Further reduced gap between cards */
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center; 
+    width: 100%;
+}
+
+/* Cards wrapper */
+.cards-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Space between cards */
+    justify-content: center; 
+    width: 100%;
+    overflow-x: hidden; /* Allow horizontal scroll */
+}
+
+/* Card Styling */
+.card {
+    width: 20%;  /* Show exactly 5 cards in a row */
+	    max-height: 380px; /* Set a maximum height */
+    overflow: hidden; /* Hide overflowing content */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 1px;
+    flex-shrink: 0;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Use flexbox to stack items vertically */
+}
+
+
+
+.card:hover {
+    background-color: grey;
+}
+
+/* Card Image Styling */
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: yellow;
+    margin: 10px 0;
+    text-align: center;
+}
+/* Card Content (to push the button to the bottom) */
+.card-content {
+    flex-grow: 1; /* Allow content to grow and take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between elements */
+	text-align:center;
+}
+
+/* Paragraph Styling (Reduce margin) */
+.card-content h3 {
+    font-size: 1rem;
+    color: black;
+    margin: 5px 0; /* Reduced margin between h3 and other elements */
+}
+
+.card-content p1 {
+    font-size: 1rem;
+    color: yellow;
+    margin: 5px 0; /* Reduced margin between p1 and other elements */
+}
+
+.price {
+    margin: 3px 0; /* Reduced margin between price and other elements */
+ color: green;}
+
+.old-price {
+    text-decoration: line-through;
+   
+    margin-right: 5px;
+}
+
+.sold-out {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px; /* Reduced margin to make the space tighter */
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.buy-button1 {
+    background-color: #1084ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: auto;  /* Push the button to the bottom */
+	position: absolute;
+	   margin: 15px 15px;
+         visibility: visible;
+
+         display: inline-block;
+
+}
+.priceshop {
+    color: rgb(0, 128, 15);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px; 
+}
+.stock-status{
+
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px; /* Reduced margin to make the space tighter */
+}
+.buy-button:hover {
+    background-color: #0056b3;
+}
+/* Styling the slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide extra cards that are out of view */
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    position : relative
+}
+
+.slider-button:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+}
+

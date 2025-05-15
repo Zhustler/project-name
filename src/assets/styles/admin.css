@@ -1,0 +1,567 @@
+header, section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: yellow;
+	text-align:center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+	
+}
+
+form input
+{
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+}
+form button {
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+}
+
+/* General Button Styling */
+button {
+    position: relative; /* Added position relative */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    margin: 12px 400px;
+    padding: 12px;
+    width: 30%;
+    font-size: 16px;
+    background-color: #252525;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 200ms;
+    position: relative; /* Added position relative */
+}
+
+button[type="submit"]:hover {
+    background-color: #353535;
+}
+
+/* Text Input Styling */
+.textInputWrapper {
+    position: relative;
+    width: 80%;
+    margin: 10px 400px;
+	
+}
+
+.textInput {
+    border: none;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #e8e8e8;
+    font-size: 14px;
+    padding: 12px;
+    width: 50%;
+    outline: none;
+    position: center;
+}
+
+.textInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Main Section Layout */
+.main-section {
+    width: 80%;
+    margin: 20px auto; /* Centers the section horizontally */
+    padding: 40px; /* Adjusted padding for better spacing */
+    border-radius: 8px;
+    border: 1px solid yellow;
+    background-color: black;
+	justify-content: center; 
+}
+
+/* Body Styling for Centering Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers sections horizontally */
+    justify-content: center; /* Centers sections vertically if needed */
+    margin: 0 auto;
+}
+
+
+/* Event Cards Styling */
+.event-cards-container
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+	    justify-content: center; 
+}
+
+.event-item
+{
+    width: 200px;
+    background-color: #9b59b6;
+    border-radius: 10px;
+    padding: 20px;
+    color: BLACK;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    border-left: 5px solid #8e44ad;
+}
+
+
+.event-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.event-item h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  white-space: normal; /* Ensures that spaces are respected and the text wraps */
+}
+
+
+
+
+.event-item p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.event-item button
+{
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; /* Added position relative */
+}
+
+.event-item button:hover
+{
+    background-color: #c0392b;
+}
+
+
+/* Announcement Cards Container */
+.announcement-cards-container {
+    display: flex;
+    gap: 9px; /* Reduce gap between cards */
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    justify-content: space-around;
+    width: 100%; /* Reduce width of the container to make cards smaller */
+}
+.announcement-item h3 {
+
+    margin-bottom: 10px;
+
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  white-space: normal; /* Ensures that spaces are respected and the text wraps */
+
+
+
+    margin-bottom: 15px;
+    font-weight: bold;
+
+
+
+}
+.announcement-item.club-category  h3 {
+    background-color: #FFD700; 
+    border-radius: 10px;
+	    border-left: 7px solid #b59900;
+}
+
+.announcement-item.faculty-category h3 {
+     border-radius: 8px;
+	 background-color: #1C4271;  
+    border-left: 7px solid #0e2645;
+}
+
+.announcement-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.announcement-item {
+
+       color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    border-left: 5px solid white;
+	
+    background-color: #242423;
+
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+	
+
+}
+.announcement-item button:hover {
+    background-color: #c0392b;
+}
+
+.announcement-item p {
+
+    margin-bottom: 10px;
+}
+
+
+.announcement-item button {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; /* Added position relative */
+}
+
+.announcement-item.faculty,
+.announcement-item.club {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+
+.announcement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.announcement-item p {
+
+    color: white;
+    margin-bottom: 20px;
+}
+
+.announcement-item .club-category  a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+.announcement-item .faculty-category  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+
+.category3 a {
+    color:  #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+.announcement-item a:hover {
+    color: #0056b3;
+}
+
+
+
+.event-item {
+  	 background-color: #808080; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+
+ 
+    border-left: 7px solid #4c4f4d;
+}
+
+
+/* event-card Styles */
+.event-item.workshops {
+      background-color: #FFE5B4;  
+    border-left: 7px solid #d1b073;
+}
+
+
+.event-item.academic-conference {
+   background-color: #DAA520;  
+    border-left: 7px solid #9c7411;
+}
+
+.event-item.film
+{
+   background-color: #FFC107;  
+    border-left: 7px solid #ba8c02;
+}
+.event-item.interview
+{
+     background-color:  #FF9800;  
+    border-left: 7px solid #ba6f00;
+}
+.event-item.faculty
+{    background-color: #994e18;  
+    border-left: 7px solid #7d4014;
+}
+.event-item.poducast
+{
+    background-color: #E65100;  
+    border-left: 7px solid #cc4a04;
+}
+
+/* Slider Buttons */
+.slider-buttons {
+    display: flex;
+    justify-content: center; /* Centers slider buttons */
+    margin-top: 10px;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    position: relative; /* Added position relative */
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}/* Contact Form Messages */
+.message-cards-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    flex-direction: column; /* Stack message cards vertically */
+   
+  
+}
+
+.message-card {
+    background-color: #FFA812;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the card */
+    text-align: center; /* Center text inside the card */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 8px solid #e39919;
+}
+
+.message-card h3 {
+    font-size: 2.5em;
+    color: red;
+    margin-bottom: 8px;
+}
+
+.message-card p {
+    font-size: 2em;
+    color: black;
+    margin: 5px 0;
+}
+
+.message-card.delete-button {
+    display: block; /* Ensures the button spans its content fully */
+    margin: 20px auto; /* Centers the button horizontally within the card */
+    padding: 15px 25px; /* Increases button size */
+    font-size: 1.5em; /* Makes the text larger */
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative; /* Added position relative */
+}
+
+.message-card.delete-button:hover {
+     background-color: darkred;
+    transform: scale(1.1); /* Slightly enlarges the button on hover for a dynamic effect */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p1 {
+    text-align: center;
+    color: red;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Cards wrapper */
+.cards-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    width: 100%;
+	justify-content: center; 
+    max-height: 150%;
+}
+.stock-status{
+    color :#1C4271
+}
+/* Card Styling */
+.card {
+    width: 200px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 10px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.card-image {
+    width: 50%;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.card-content h3 {
+    font-size: 1rem;
+    color: black;
+    margin: 10px 0;
+}
+
+.price {
+    margin: 10px 0;
+	color:red;
+}
+
+
+.buy-button {
+    background-color: yellow;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+	margin-bottom :20px;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    display: flex;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    position: relative; /* Added position relative */
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.card button.delete-button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative; /* Added position relative */
+}
+
+.card button.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Styling the slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide extra cards that are out of view */
+}
+
+.slider-controls {
+       display: flex;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+slider-button:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+}
+
+

@@ -1,0 +1,91 @@
+ 
+
+.popup {
+    position: fixed; /* Place la pop-up au même endroit même lors du défilement */
+    top: 0; /* Place en haut de la page */
+    left: 0; /* Place à gauche de la page */
+    width: 100%; /* Pop-up pleine largeur */
+    height: 100%; /* Pop-up pleine hauteur */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+    display: flex; /* Centre le contenu horizontalement et verticalement */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    z-index: 1000; /* S'assure que la pop-up est au-dessus de tous les autres éléments */
+}
+
+.popup video {
+    max-width: 100%; /* Vidéo ne dépasse pas 80% de la largeur de l'écran */
+    max-height: 100%; /* Vidéo ne dépasse pas 80% de la hauteur de l'écran */
+}
+
+
+
+section {
+    border: 1 px solid yellow; /* Définit une bordure jaune (erreur ici : 'px' doit être corrigé) */
+}
+
+div {
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.main-content {
+    display: flex; /* Affiche les sections principales côte à côte */
+    padding: 40px; /* Ajoute un espace interne autour du contenu principal */
+    gap: 20px; /* Ajoute un espacement entre les éléments */
+}
+
+.image-section img {
+    max-width: 50%; /* Limite la taille maximale des images à 50% */
+    border-radius: 10px; /* Ajoute des coins arrondis aux images */
+    margin-right: 1px; /* Espacement minimal à droite de l'image */
+    transform: translateX(200px); /* Décale l'image de 200px vers la droite */
+    float: left;
+}
+
+.image-section {
+    margin-right: 20px; /* Ajoute un espacement entre l'image et le texte */
+}
+
+.text-section {
+    margin-left: 20px; /* Ajoute un espacement entre le texte et l'image */
+    transform: translateX(-200px);
+    float: left; /* Décale le texte de 200px vers la gauche */
+}
+
+.text-section h1 {
+    margin: 40px; /* Ajoute un espacement autour du titre */
+    font-size: 40px; /* Taille du texte importante pour le titre principal */
+    font-weight: bold; /* Met le titre en gras */
+    font-family: 'Impact'; /* Police impactante pour attirer l'attention */
+  
+}
+
+.text-section p {
+    margin-left: 55px; /* Ajoute un espacement autour du paragraphe */
+    line-height: 1.6; /* Améliore la lisibilité avec un interligne */
+    font-family: 'Montserrat'; /* Police moderne et élégante */
+    float: right;
+    text-align: left; /* Aligne le texte à gauche */
+    font-size: 13px; /* Taille de texte confortable pour la lecture */
+
+}
+
+.cta-button {
+    display: inline-block; /* Rend le bouton cliquable comme un bloc */
+    padding: 10px 20px; /* Ajoute de l'espace interne pour un clic facile */
+    background-color: white; /* Fond blanc pour contraster avec le texte noir */
+    color: black; /* Texte noir pour une bonne lisibilité */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Rend le texte du bouton plus visible */
+    border-radius: 5px; /* Coins arrondis pour un design moderne */
+    transition: background-color 0.3s ease; /* Animation fluide au survol */
+    transform: translateX(100px); /* Décale le bouton de 100px vers la droite */
+}
+
+.cta-button:hover {
+    background-color: gray; /* Change le fond en gris au survol */
+}
+
+/* Les styles du footer ont également des commentaires similaires */
+
+

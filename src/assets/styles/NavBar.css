@@ -1,0 +1,84 @@
+/* General Styling */
+body, html {
+    margin: 0; /* Supprime les marges par défaut pour éviter tout décalage */
+    padding: 0; /* Supprime les marges internes */
+    color: white; /* Définit le texte en blanc */
+    background-color: black; /* Définit le fond noir pour un contraste élevé */
+    width: 100%; /* Assure que la largeur prend tout l'écran */
+    height: 100%; /* Assure que la hauteur prend tout l'écran */
+    overflow-x: hidden; /* Empêche le défilement horizontal indésirable */
+}
+
+/* Horizontal Navigation Menu Styling */
+.horizontal-nav {
+  position: relative; /* Fixe la barre de navigation en haut même lors du défilement */
+  top: 0; /* Place la barre tout en haut de la page */
+  width: 100%; /* Barre de navigation pleine largeur */
+  background-color: black; /* Fond noir pour correspondre au thème général */
+  padding: 10px 0; /* Ajoute un espacement vertical pour le confort visuel */
+  z-index: 1000; /* Assure que la barre reste au-dessus d'autres éléments */
+  font-family: "Times New Roman", Times, serif; /* Style de police classique */
+}
+
+.horizontal-nav ul {
+  list-style: none; /* Supprime les puces de liste */
+  display: flex; /* Affiche les éléments en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  margin: 0; /* Supprime les marges */
+  padding: 0; /* Supprime les marges internes */
+}
+
+.horizontal-nav li {
+  margin: 0 15px; /* Ajoute un espacement horizontal entre les liens */
+}
+
+.horizontal-nav a {
+  color: white; /* Liens en blanc */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+  font-weight: bold; /* Texte en gras pour rendre les liens visibles */
+  padding: 8px 16px; /* Ajoute de l'espace autour des liens pour un clic facile */
+  position: relative; /* Nécessaire pour positionner l'animation sous les liens */
+  transition: color 0.3s ease; /* Animation fluide pour le changement de couleur */
+}
+
+.horizontal-nav a::after {
+  content: ""; /* Ajoute une animation de soulignement sous les liens */
+  position: absolute; /* Positionnement précis sous le lien */
+  bottom: -1px; /* Distance entre le texte et le soulignement */
+  left: 0; /* Commence à gauche */
+  width: 0; /* Initialement, le soulignement est invisible */
+  height: 1px; /* Épaisseur de la ligne */
+  background-color: yellow; /* Couleur jaune pour le soulignement */
+  transition: width 0.3s ease; /* Animation fluide pour le soulignement */
+}
+
+.horizontal-nav ul li.active a::after {
+  width: 80%; /* Étend le soulignement pour indiquer l'élément actif */
+  bottom: -1px; /* Garde la même distance que lors du survol */
+}
+
+.horizontal-nav ul li a:hover::after {
+  width: 100%; /* Affiche le soulignement complet au survol */
+}
+
+.horizontal-nav ul li a:hover + .active {
+  text-decoration: none; /* Supprime toute décoration supplémentaire */
+  visibility: hidden; /* Cache l'état actif temporairement */
+}
+/* Target the active class */
+.horizontal-nav .nav-item.active::after,
+.horizontal-nav a.active::after {
+  width: 80%;
+  bottom: -1px;
+}
+
+.horizontal-nav .nav-item:hover::after,
+.horizontal-nav a:hover::after {
+  width: 100%;
+}
+
+.horizontal-nav .nav-item:hover + .active {
+  text-decoration: none;
+  visibility: hidden;
+}
+
